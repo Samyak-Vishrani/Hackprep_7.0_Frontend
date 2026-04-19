@@ -1,0 +1,135 @@
+.resources {
+  background-color: var(--color-bg-cream);
+  padding: 72px 60px;
+}
+
+.resources_heading {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 36px;
+  letter-spacing: -0.5px;
+}
+
+.resources_heading--services {
+  margin-top: 64px;
+}
+
+/* Resource Cards Row */
+.resources_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.resource-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-md);
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.resource-card_icon {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.resource-card_title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  line-height: 1.3;
+}
+
+.resource-card_desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  flex: 1;
+}
+
+.resource-card_link {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+}
+
+.resource-card_link:hover {
+  opacity: 0.6;
+}
+
+/* Service Cards Row */
+.services_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 280px;
+  cursor: pointer;
+}
+
+.service-card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-card_img {
+  transform: scale(1.04);
+}
+
+.service-card_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 60%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.service-card_title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.service-card_desc {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.service-card_link {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-top: 4px;
+  transition: opacity 0.2s;
+}
+
+.service-card_link:hover {
+  opacity: 0.7;
+}

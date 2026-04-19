@@ -1,0 +1,28 @@
+.admissions {
+  background-color: var(--color-bg-yellow);
+  padding: 48px 80px;
+}
+
+.admissions_heading {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-text-dark);
+  margin-bottom: 32px;
+  letter-spacing: -0.3px;
+}
+
+.admissions_banner {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 160px;
+  width: 100%;
+}
+
+.admissions_banner_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
