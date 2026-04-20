@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg-cream: #f5ede2;
+  --color-bg-warm: #ede3d7;
+  --color-bg-yellow: #e8d887;
+  --color-bg-white: #ffffff;
+  --color-text-dark: #1a1a1a;
+  --color-text-body: #444444;
+  --color-text-muted: #888888;
+  --color-accent-black: #111111;
+  --color-border: #e0d8cc;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-cream);
+  /* -webkit-font-smoothing: antialiased; */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

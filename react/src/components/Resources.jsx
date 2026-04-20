@@ -60,7 +60,7 @@ function Resources() {
         ))}
       </div>
 
-      <h2 className="resources_heading resources_heading--services">
+      <h2 className="resources_heading resources_heading-services">
         Comprehensive Student Services
       </h2>
       <div className="services_cards">

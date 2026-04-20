@@ -10,12 +10,58 @@ function Contact() {
     message: "",
   });
 
+  // const handleFirstNameChange = (e) => {
+  //   setForm({ ...form, firstName: e.target.value });
+  // };
+
+  // const handleLastNameChange = (e) => {
+  //   setForm({ ...form, lastName: e.target.value });
+  // };
+
+  // const handleEmailChange = (e) => {
+  //   setForm({ ...form, email: e.target.value });
+  // };
+
+  // const handleSubjectChange = (e) => {
+  //   setForm({ ...form, subject: e.target.value });
+  // };
+
+  // const handleMessageChange = (e) => {
+  //   setForm({ ...form, message: e.target.value });
+  // };
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = () => {
-    alert("Message sent! We'll respond as soon as possible.");
+    if (!form.firstName.trim()) {
+      alert("Please enter your first name.");
+      return;
+    }
+    if (!form.lastName.trim()) {
+      alert("Please enter your last name.");
+      return;
+    }
+    if (!form.email.trim()) {
+      alert("Please enter your email address.");
+      return;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(form.email.trim())) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    if (!form.subject.trim()) {
+      alert("Please enter a subject.");
+      return;
+    }
+    if (!form.message.trim()) {
+      alert("Please enter a message.");
+      return;
+    }
+
+    alert("Form Submitted Successfully!!");
     setForm({ firstName: "", lastName: "", email: "", subject: "", message: "" });
   };
 
